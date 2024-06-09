@@ -19,7 +19,7 @@ public class Jenkins2Test {
 
     @Test
     public void test1() {
-        assertTrue(driver.getTitle().contains("Google"), "The Website doesn't Load Successfully");
+        assertTrue(driver.getTitle().contains("YouTube"), "The Website doesn't Load Successfully");
         System.out.println("Youtube Website Test Success");
     }
 
