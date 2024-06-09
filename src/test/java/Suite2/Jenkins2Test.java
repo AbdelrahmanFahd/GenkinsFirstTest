@@ -14,13 +14,14 @@ public class Jenkins2Test {
     @BeforeMethod
     public void setUp() {
         driver = new ChromeDriver();
-        driver.get("https://www.youtube.com/");
+        driver.get("https://www.google.com.eg/");
     }
 
     @Test
     public void test1() {
-        assertTrue(driver.getTitle().contains("YouTube"), "The Website doesn't Load Successfully");
-        System.out.println("Youtube Website Test Success");
+        assertTrue(driver.getTitle().contains("Google"), "The Website doesn't Load Successfully");
+        System.out.println("Google Website Test Success");
+
     }
 
     @AfterMethod
