@@ -1,4 +1,4 @@
-<suite name="Suite" verbose="1" annotations="JDK" thread-count="2" parallel="tests">
+<suite name="Suite" verbose="1" thread-count="2" annotations="JDK" parallel="tests">
 
     <test name="First Try Jenkins Integration">
         <classes>
@@ -11,7 +11,6 @@
             <class name="Suite2.Jenkins2Test"/>
         </classes>
     </test>
-
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
     </listeners>
