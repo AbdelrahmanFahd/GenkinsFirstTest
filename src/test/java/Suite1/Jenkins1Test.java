@@ -1,3 +1,5 @@
+package Suite1;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -6,7 +8,7 @@ import org.testng.annotations.Test;
 
 import static org.testng.Assert.assertTrue;
 
-public class JenkinsTest {
+public class Jenkins1Test {
     WebDriver driver;
 
     @BeforeMethod
@@ -18,6 +20,8 @@ public class JenkinsTest {
     @Test
     public void test1() {
         assertTrue(driver.getTitle().contains("Google"), "The Website doesn't Load Successfully");
+        System.out.println("Google Website Test Success");
+
     }
 
     @AfterMethod
