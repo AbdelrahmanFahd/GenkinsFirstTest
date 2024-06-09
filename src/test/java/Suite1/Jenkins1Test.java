@@ -13,6 +13,7 @@ public class Jenkins1Test {
 
     @BeforeMethod
     public void setUp() {
+        System.out.println(System.getProperty("browser"));
         driver = new ChromeDriver();
         driver.get("https://www.google.com.eg/");
     }
